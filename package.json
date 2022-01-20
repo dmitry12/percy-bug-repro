@@ -1,0 +1,15 @@
+{
+  "name": "example-repro",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@percy/cli": "^1.0.0-beta.73",
+    "@percy/storybook": "^4.1.0"
+  },
+  "scripts": {
+    "snapshot": "npm rebuild puppeteer && STORYBOOK_PERCY=true build-storybook && percy storybook --debug ./storybook-static"
+  }
+}
