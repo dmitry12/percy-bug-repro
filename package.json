@@ -6,10 +6,10 @@
   "dependencies": {
   },
   "devDependencies": {
-    "@percy/cli": "^1.0.0-beta.73",
+    "@percy/cli": "^1.0.0-beta.74",
     "@percy/storybook": "^4.1.0"
   },
   "scripts": {
-    "snapshot": "npm rebuild puppeteer && STORYBOOK_PERCY=true build-storybook && percy storybook --debug ./storybook-static"
+    "snapshot": "percy storybook --debug ./storybook-static"
   }
 }
